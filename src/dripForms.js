@@ -1,3 +1,7 @@
+import config, { getBucket } from './config'
+
+console.log(config)
+
 function identifyDripUser() {
   return _dcq.push([
     'identify',
@@ -12,6 +16,7 @@ function identifyDripUser() {
 identifyDripUser()
 
 function getUser(user) {
+  console.log(getBucket(user))
   console.log(user) // Use DEBUGGER!
   const profile = `
       <h3>Subscriber!</h3>
