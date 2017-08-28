@@ -3,10 +3,10 @@ const webpack = require('webpack')
 
 module.exports = {
   devtool: 'cheap-eval-source-map',
-  entry: './src/dripForms.js',
+  entry: './src/journey.js',
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'dripForms.js'
+    filename: 'journey.js'
   },
   module: {
     rules: [
