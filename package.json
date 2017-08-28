@@ -1,0 +1,34 @@
+{
+  "name": "dripforms",
+  "version": "1.0.0",
+  "description": "A lite package for personalizing website appearance and functionality based on a users status in drip",
+  "main": "dripForms.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "babel src -d dist && webpack -p",
+    "clean": "rm -rf dist",
+    "dist": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StreamlinedStudio/DripForms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/StreamlinedStudio/DripForms/issues"
+  },
+  "homepage": "https://github.com/StreamlinedStudio/DripForms#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "html-webpack-plugin": "^2.30.1",
+    "raw-loader": "^0.5.1",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
