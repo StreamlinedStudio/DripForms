@@ -17,9 +17,12 @@ function getUser(user) {
       <h3>Subscriber!</h3>
       <h4>${user.email}</h4>
       <p>Tags:</p>
-      ${user.tags.map(tag => `<span>${tag}</span>`)}
+      ${user.tags && user.tags.map(tag => `<span>${tag}</span>`)}
       `
+  const notASub = `
+   <h1>Not A Subscriber</h1>
+  `
   document.querySelector('#dripFormTesting').innerHTML = user.email
     ? profile
-    : 'Not A Subscriber'
+    : notASub
 }
