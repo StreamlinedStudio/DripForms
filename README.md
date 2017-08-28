@@ -7,4 +7,4 @@ A lite package for personalizing website appearance and functionality based on a
 
 #### Production
 - rumn `npm dist`
-- minified file will be stored in `dist/dripForms.js`
+- minified file will be in `dist` folder called `dripForms.js`
