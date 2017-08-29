@@ -23,6 +23,7 @@ import config, { getBucket, nextEnhancement } from './config'
           success: function(payload) {
             Journey.attributes = payload
             Journey.setUi()
+            document.cookie = 'drip_bucket=' + Journey.getBucket()
             return payload
           }
         }
