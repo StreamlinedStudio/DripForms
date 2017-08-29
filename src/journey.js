@@ -49,9 +49,7 @@ import config, { getBucket, nextEnhancement } from './config'
     getBucket: function() {
       return getBucket(Journey.attributes)
     },
-    getBucket: function() {
-      return getBucket(Journey.attributes)
-    },
+
     getEnhancement: function() {
       return nextEnhancement(Journey.attributes)
     },
